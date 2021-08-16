@@ -13,7 +13,7 @@ class Ball(Turtle):
 
     def start_position(self):
         self.goto(0,0)
-        self.setheading(45 + random.randint(0,0)*90)
+        self.setheading(45 + random.randint(0,3)*90)
 
     def move(self):
         self.fd(DISTANCE)
