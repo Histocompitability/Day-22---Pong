@@ -15,3 +15,10 @@ class Score(Turtle):
         self.clear()
         self.initial_score += 1
         self.write(self.initial_score, False, "Center", ("Courier", 30, "bold"))
+
+
+class Game_Over_Message(Score):
+    def __init__(self):
+        super().__init__(position=(0, 0))
+        self.initial_score = "Game Over"
+        self.write(self.initial_score, False, "Center", ("Courier", 50, "bold"))
