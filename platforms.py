@@ -8,12 +8,12 @@ class Platform:
         self.block_bank = []
         for i in range(5):
             t = turtle.Turtle("square")
+            t.penup()
             t.hideturtle()
             t.color("white")
-            t.left(90)
             t.speed(0)
-            t.penup()
             t.goto(x_pos, 40-i*20)
+            t.left(90)
             t.showturtle()
             self.block_bank.append(t)
 
